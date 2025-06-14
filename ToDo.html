@@ -1,0 +1,23 @@
+<head>
+  <title>To Do List</title>
+  <link rel="stylesheet" href="ToDo.css">
+  
+</head>
+
+
+<body>
+    <p>To Do List</p>
+    <div class="todo-input-grid">
+        <input placeholder="ToDo Name" class="js-name-input" onkeydown="
+        if(event.key === 'Enter'){
+            addTodo();
+        }">
+        <input type="date" class="js-dueDate-input">
+        <button onclick="
+            addTodo();
+        " class="add-button js-add-todo-button">Add</button>
+    </div>
+    <div class="js-name-output todo-grid"></div>
+
+    <script src="ToDo.js"></script>
+</body>
